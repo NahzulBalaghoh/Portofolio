@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Custom style (dipindah dari <style> di file asli) ===== */
+@layer components {
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(186, 230, 253, 0.75);
+    box-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.08), 0 2px 8px -2px rgba(3, 105, 161, 0.04);
+  }
+
+  .glass-card:hover {
+    border-color: rgba(56, 189, 248, 0.65);
+    box-shadow: 0 20px 35px -10px rgba(2, 132, 199, 0.16);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #0c4a6e 10%, #0284c7 55%, #38bdf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .grid-bg-pattern {
+    background-size: 36px 36px;
+    background-image:
+      linear-gradient(to right, rgba(2, 132, 199, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(2, 132, 199, 0.06) 1px, transparent 1px);
+  }
+}
